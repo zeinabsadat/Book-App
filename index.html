@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book App UI</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="Fonts/Fonts.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <img src="images/icons/menu.svg">
+            <img src="images/icons/search.svg">
+        </header>
+
+        <section class="greeting">
+            <h3>Hello, Maria</h3>
+            <p class="body1">Find your favourite category!</p>
+        </section>
+
+        <div class="categories snaps-inline">
+            <button class="category active caption">Classics</button>
+            <button class="category caption">Nature</button>
+            <button class="category caption">Psychology</button>
+            <button class="category caption">Travel</button>
+            <button class="category caption">Sci-fi</button>
+            <button class="category caption">Investment</button>
+            <button class="category caption">Fiction</button>
+            <button class="category caption">Comedy</button>
+        </div>
+
+        <section class="trending">
+            <div class="section-header">
+                <h5>Trending Books</h5>
+                <a class="caption" href="#">View all</a>
+            </div>
+            <div class="book-list snaps-inline" id="book-list-container">
+                <div class="bookContainer"> 
+                    <img id="imageContainer">
+                    <p class="caption" id="bookTitle"></p>
+                    <p class="overline" id="bookAuthor"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="top-authors">
+            <div class="section-header">
+                <h5>Winner Authors</h5>
+                <a class="caption" href="#">View all</a>
+            </div>
+            <div class="book-list snaps-inline" id="top-book-list-container">
+                <div class="bookContainer">
+                    <img id="imageContainer">
+                    <p class="caption" id="bookTitle"></p>
+                    <p class="overline" id="bookAuthor"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="continue-listening">
+            <h5>Borowed Book</h5>
+            <div class="listening-card">
+                <img src="images/The Five Red Herrings.jpg"
+                alt="The Five Red Herrings book cover">
+                <div class="book-info">
+                    <p class="subtitle2">The Five Red Herrings</p>
+                    <p class="overline">by Dorothy L. Sayers</p>
+                    <p class="lastUpdate overline"></p>
+                </div>
+                <div class="progress-circle">
+                    <span class="body2">80%</span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="bookList.js"></script>
+    <script src="dueDate.js"></script>
+</body>
+</html>
