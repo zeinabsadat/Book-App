@@ -1,12 +1,6 @@
-const lastUpdateElements = document.getElementsByClassName("lastUpdate");
-if (lastUpdateElements.length > 0) {
-    const lastUpdateElement = lastUpdateElements[0];
-    const currentDate = new Date();
-    const germanFormat = currentDate.toLocaleDateString("de-DE", {
-        day: "2-digit",
-        month: "numeric",
-        year: "numeric"
-    });
+let date = new Date();
+date.setDate(date.getDate() + 21);
 
-    lastUpdateElement.textContent = `Last Updated: ${germanFormat}`;
-}
+let dueDateElement = document.querySelector(".dueDate");
+dueDateElement.innerText = `Due date: ${date.getDate()}. ${date.getMonth() + 1}. ${date.getFullYear()}`;
+dueDateElement.style.color = "#55dde0"

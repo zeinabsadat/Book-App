@@ -57,7 +57,7 @@ body {
 }
 
 .app-container {
-    width: 320px;
+    width: 360px;
     background: linear-gradient(135deg, #2f4858, #6695b3);
     border-radius: var(--border-radius-16);
     padding: var(--padding-24);
@@ -85,7 +85,7 @@ header {
 .categories {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 30%;
+    grid-auto-columns: 27%;
     gap: 12px;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
@@ -131,7 +131,7 @@ header {
 .book-list {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 32%;
+    grid-auto-columns: 34%;
     gap: 24px;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
@@ -147,7 +147,7 @@ header {
 }
 
 .book-list img {
-    height: 150px;
+    height: 180px;
     border-radius: var(--border-radius-8);
     margin-bottom: var(--margin-8);
 }
@@ -163,26 +163,15 @@ header {
 .listening-card {
     background: rgba(255, 255, 255, 0.1);
     border-radius: var(--border-radius-8);
-    padding: var(--padding-16);
+    padding: var(--padding-8);
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
 }
 
 .listening-card img{
-    height: 120px;
+    height: 80px;
     border-radius: var(--border-radius-4);
-}
-
-.progress-circle {
-    width: 60px;
-    height: 60px;
-    background: conic-gradient(#f6ae2d 80%, rgba(255,255,255,0.2) 0%);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .book-info{
